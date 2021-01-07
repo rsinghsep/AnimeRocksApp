@@ -1,4 +1,4 @@
-package com.staysilly.animerocksapp
+package com.staysilly.animerocksapp.viewmodels
 
 import androidx.lifecycle.ViewModel
 
