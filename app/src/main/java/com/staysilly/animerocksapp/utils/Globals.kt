@@ -1,4 +1,7 @@
 package com.staysilly.animerocksapp.utils
 
-class Globals {
+object Globals {
+
+    val BASE_URL = "https://api.jikan.moe/v3/"
+
 }
