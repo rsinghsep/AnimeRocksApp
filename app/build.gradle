@@ -21,9 +21,37 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+
+    dataBinding {
+        enabled = true
+    }
+
 }
 
 dependencies {
+    implementation 'com.google.android.material:material:1.2.1'
+
+    //versions
+    def version_retrofit = 'retrofit:2.9.0'
+    def version_retrofit_data_serialization = 'converter-gson:2.9.0'
+    def version_constraint_layout = 'constraintlayout:2.0.4'
+    def version_recycler_view = 'recyclerview:1.1.0'
+    def version_lifecycle_version = '2.2.0'
+    def version_coroutines = '1.3.9'
+    def version_picasso = '2.5.2'
+    def version_card_view = '1.0.0'
+
+
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.3.2'
@@ -33,4 +61,25 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
+    //lifecycle aware components
+    implementation "androidx.lifecycle:lifecycle-extensions:$version_lifecycle_version"
+
+    //recyclerview
+    implementation "androidx.recyclerview:$version_recycler_view"
+    implementation "androidx.cardview:cardview:$version_card_view"
+
+    //constraint layout
+    implementation "androidx.constraintlayout:$version_constraint_layout"
+
+    //retrofit2
+    implementation "com.squareup.retrofit2:$version_retrofit"
+    //retrofit data serialization/deserialization
+    implementation "com.squareup.retrofit2:$version_retrofit_data_serialization"
+    //kotlin coroutines
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$version_coroutines"
+
+    //picasso
+    implementation "com.squareup.picasso:picasso:$version_picasso"
+
 }
+
