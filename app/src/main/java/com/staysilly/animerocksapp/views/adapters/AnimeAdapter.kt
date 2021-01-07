@@ -21,13 +21,18 @@ class AnimeAdapter : RecyclerView.Adapter<AnimeAdapter.AnimeViewHolder>() {
         return data.size
     }
     override fun onBindViewHolder(holder: AnimeViewHolder, position: Int) {
-        // TODO: 1/8/21
+        holder.bindData(data[position])
     }
 
 
 
     class AnimeViewHolder(dataBinding: RowAnimeDetailBinding) : RecyclerView.ViewHolder(dataBinding.root){
 
+        val  binding : RowAnimeDetailBinding = dataBinding
+
+        fun bindData(animeCharcter: AnimeCharacter){
+            binding.animeCharcter = animeCharcter
+        }
     }
 
 }
