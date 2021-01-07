@@ -39,6 +39,8 @@ android {
 }
 
 dependencies {
+    implementation 'com.google.android.material:material:1.2.1'
+
     //versions
     def version_retrofit = 'retrofit:2.9.0'
     def version_retrofit_data_serialization = 'converter-gson:2.9.0'

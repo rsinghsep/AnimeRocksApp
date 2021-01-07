@@ -11,4 +11,5 @@ class MainViewModel: ViewModel() {
         val repo = MainRepository()
         return repo.getAnimeCharcterDetails(charcterName)
     }
+
 }
