@@ -60,6 +60,9 @@ dependencies {
     //lifecycle aware components
     implementation "androidx.lifecycle:lifecycle-extensions:$version_lifecycle_version"
 
+    //recyclerview
+    implementation "androidx.recyclerview:$version_recycler_view"
+
     //constraint layout
     implementation "androidx.constraintlayout:$version_constraint_layout"
 

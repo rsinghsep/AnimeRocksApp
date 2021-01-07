@@ -1,10 +1,10 @@
 package com.staysilly.animerocksapp.models
 
 data class AnimeCharactersResponse(
-    var results: List<Character>
+    var results: List<AnimeCharacter>
 )
 
-data class Character(
+data class AnimeCharacter(
     var mal_id: Int,
     var url: String,
     var image_url: String,
