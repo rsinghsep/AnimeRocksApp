@@ -1,14 +1,17 @@
-# AnimeRocksApp
+### AnimeRocksApp
 
-design pattern used MVVM 
-programming language used - Kotlin 
+######apk file 
+https://github.com/rsinghsep/AnimeRocksApp/blob/develop/app-debug.apk
 
-The app uses Android Architecture Components like LiveData 
 
-external open source libraries used 
+######Below are the components used in the app
+
+- MVVM design pattern 
+- Kotlin programing language 
+- Android Architecture components like LiveData, databinding 
+- Kotlin Coroutines for managing backgound threads
+
+######Third party libraries  
   - Retrofit for networking 
   - Picasso for Image processing 
-  - used Kotlin Coroutines for managing backgound threads
- 
- 
- apk -> https://github.com/rsinghsep/AnimeRocksApp/blob/develop/app-debug.apk
+
